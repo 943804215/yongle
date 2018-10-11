@@ -136,16 +136,12 @@ body{width:100%;margin:0 auto}
     height:30px;
 }
 #nav .nav2 .dh li a{
-    width: 78px;
-    height:30px;
     color:#4c4c4c;
     display: block;
     float:left;
-    background: yellowgreen;
 }
-#nav .nav2 .dh li  p{
+#nav .nav2 .dh li a p{
     float:left;
-    background: #4c4c4c;
 }
 #nav .nav2 .dh li a em{
     width:13px;
@@ -156,12 +152,12 @@ body{width:100%;margin:0 auto}
     margin-left:5px;
     float:left;
 }
+
 #nav .nav2 .menu2{
     box-sizing: border-box;
     width:386px;
     height:500px;
     border:3px solid #dddddd;
-    background: #cd0000;
     float: left;
 }
 
@@ -174,21 +170,7 @@ body{width:100%;margin:0 auto}
     float: left;
 }
 
-#nav .nav2 .menu2-first .channel{
-    font-size:14px;
-    font-weight: bold;
-    color:#4c4c4c;
-    display: block;
-    float:left;
-}
 
-#nav .nav2 .menu2-first .channel .first{
-    display: block;
-    width:244px;
-    height:43px;
-    margin-left:10px;
-    color:#4c4c4c;
-}
 
 
 

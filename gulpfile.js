@@ -31,7 +31,7 @@ gulp.task("html", ()=>{
 
 gulp.task("watch", ()=>{
     gulp.watch("index.html",["html","sass"]);
-    gulp.watch("sass/*.scss",["html","sass"])
+    gulp.watch("sass/*.scss",["html","sass"]);
 })
 
 gulp.task("default",["watch","connect","css"]);
@@ -46,6 +46,8 @@ gulp.task("css",()=>{
     return gulp.src(["css/*.css"]).pipe(cleanCss()).pipe(gulp.dest("dist/css"))
 });
 
-gulp.task("sass",()=>{
-    return gulp.src(["sass/*.scss"]).pipe(sass()).pipe(gulp.dest("dist/css"))
+gulp.task("sass", () =>{
+    return gulp.src(["sass/*.scss"])
+           .pipe(sass().on("error",sass.logError))
+           .pipe(gulp.dest("dist/css"))
 })
