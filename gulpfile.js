@@ -13,6 +13,9 @@ var uglify = require("gulp-uglify");
 // gulp css压缩插件
 var cleanCss = require("gulp-clean-css");
 
+// sass编译插件
+var sass =require("gulp-sass-china")
+
 gulp.task('connect', function() {
     connect.server({
         root:"dist/",
@@ -27,10 +30,11 @@ gulp.task("html", ()=>{
 })
 
 gulp.task("watch", ()=>{
-    gulp.watch("index.html",["html"]);
+    gulp.watch("index.html",["html","sass"]);
+    gulp.watch("sass/*.scss",["html","sass"])
 })
 
-gulp.task("default",["watch","connect"]);
+gulp.task("default",["watch","connect","css"]);
 
 // script 转存指令
 
@@ -40,4 +44,8 @@ gulp.task("default",["watch","connect"]);
 
 gulp.task("css",()=>{
     return gulp.src(["css/*.css"]).pipe(cleanCss()).pipe(gulp.dest("dist/css"))
+});
+
+gulp.task("sass",()=>{
+    return gulp.src(["sass/*.scss"]).pipe(sass()).pipe(gulp.dest("dist/css"))
 })

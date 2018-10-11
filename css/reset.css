@@ -7,4 +7,4 @@ h1,h2,h3,strong,em,i{ font-style:normal; font-weight:normal;}
 a,a:hover{text-decoration:none;}
 .clearfix:after{clear:both; content:''; font-size:0; display:block; visibility:hidden; height:0}
 i{font-style: normal;}
-body{min-width: 1176px;}
+body{min-width: 1176px;background: #fff}
