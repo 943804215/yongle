@@ -16,6 +16,7 @@ var cleanCss = require("gulp-clean-css");
 // sass编译插件
 var sass =require("gulp-sass-china")
 
+
 gulp.task('connect', function() {
     connect.server({
         root:"dist/",
@@ -50,4 +51,5 @@ gulp.task("sass", () =>{
     return gulp.src(["sass/*.scss"])
            .pipe(sass().on("error",sass.logError))
            .pipe(gulp.dest("dist/css"))
+           .pipe(gulp.dest("css"))
 })

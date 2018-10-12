@@ -1,174 +1,576 @@
-body{width:100%;margin:0 auto}
+@charset "UTF-8";
+body {
+  width: 100%;
+  margin: 0 auto; }
 
 /*nav部分*/
-#nav{
-    width: 100%;
-    background: #fbfbfb;
-    border-bottom: 1px #e0e0e0 solid;
-    height: 30px;
-    line-height: 30px;
-}
-#nav .nav1{
-    height:30px;
-    margin-left:75px;
-    float:left;
-}
-#nav .nav1 .hello{
-    float:left;
+#nav {
+  width: 100%;
+  background: #fbfbfb;
+  border-bottom: 1px #e0e0e0 solid;
+  height: 30px;
+  line-height: 30px; }
 
+#nav .nav1 {
+  height: 30px;
+  margin-left: 75px;
+  float: left; }
+
+#nav .nav1 .hello {
+  float: left; }
+
+#nav .nav1 .add {
+  float: left;
+  margin-left: 15px; }
+
+#nav .nav1 .add a {
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  color: #4c4c4c; }
+
+#nav .nav1 .system {
+  float: left;
+  margin-left: 9px; }
+
+#nav .nav1 .system .span1 {
+  float: left;
+  display: block;
+  height: 30px;
+  line-height: 30px; }
+
+#nav .nav1 .system .login {
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  color: #4c4c4c;
+  float: left; }
+
+#nav .nav1 .system .register {
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  color: #4c4c4c;
+  float: left;
+  margin-left: 4px; }
+
+#nav .nav1 a:hover {
+  color: #cd0000; }
+
+#nav .nav1 .system a:hover {
+  color: #cd0000; }
+
+#nav .nav1 .my {
+  height: 30px;
+  line-height: 30px;
+  margin-left: 15px;
+  float: left; 
+  position: relative;}
+
+#nav .nav1 .my .yl {
+  display: block;
+  color: #4c4c4c;
+  float: left;
+  position: absolute;
+  top:0;
+  z-index: 10 }
+
+#nav .nav1 .my .yl p {
+  float: left; }
+
+#nav .nav1 .my .yl em {
+  display: block;
+  width: 13px;
+  height: 14px;
+  background: url(../images/pic1.jpg) no-repeat;
+  margin-top: 8px;
+  margin-left: 5px;
+  float: left; }
+  #nav .nav1 .my ul{
+    height:30px;
+  }
+#nav .nav1 .my li {
+  width: 74px; 
+  height:30px;
+  box-sizing: border-box;}
+
+#nav .nav1 .my li .li1-1 span {
+  width: 74px;
+  display: block; }
+
+#nav .nav1 .my li .li1-1 span a {
+  width: 68px;
+  display: block;
+  color: #4c4c4c; }
+
+#nav .nav1 .my li .yl:hover {
+  background: #fff;
+  width: 74px;
+ 
+  border: 3px solid #dddddd;
+  border-bottom: 0; }
+
+#nav .nav1 .my li .li1-1 {
+  display: none;
+  position: absolute;
+  top:30px; 
+  z-index: 9}
+
+#nav .nav1 .my li:hover .li1-1 {
+  display: block; 
+  border: 3px solid #dddddd;
+  border-top: 0; 
+  background:#fff;
 }
-#nav .nav1 .add{
-    float:left;
+
+#nav .nav1 .my li:hover .li1-1 a:hover {
+  color: #cd0000;
+ }
+
+#nav .nav1 .my li:hover .yl {
+  color: #cd0000; }
+
+#nav .nav2 {
+  height: 30px;
+  margin-left: 539px;
+  float: left; 
+  position: relative;}
+
+#nav .nav2 .dh {
+  width: 75px;
+  height: 30px;
+  float: left; }
+
+#nav .nav2 .dh li {
+  width: 75px;
+  height: 30px; }
+
+#nav .nav2 .dh li .dao {
+  width: 78px;
+  height: 30px;
+  color: #4c4c4c;
+  display: block;
+  float: left; }
+
+#nav .nav2 .dh li p {
+  float: left; }
+
+#nav .nav2 .dh li .dao em {
+  width: 13px;
+  height: 14px;
+  display: block;
+  background: url(../images/pic1.jpg) no-repeat;
+  margin-top: 8px;
+  margin-left: 5px;
+  float: left; }
+
+#nav .nav2 .menu2 {
+  box-sizing: border-box;
+  width: 386px;
+  border: 3px solid #dddddd;
+  float: left;
+  position: absolute;
+  top:30px; 
+  display: none;
+  z-index:9}
+
+#nav .nav2 .menu2-first {
+  width: 360px;
+  height: 65px;
+  border-bottom: 1px dashed #4c4c4c;
+  margin-left: 15px;
+  margin-top: 15px;
+  float: left; }
+
+#nav .nav2 .menu2-first .channel {
+  font-size: 14px;
+  font-weight: bold;
+  color: #4c4c4c;
+  display: block;
+  float: left; }
+
+#nav .nav2 .menu2-first .channel .first {
+  display: block;
+  width: 244px;
+  height: 43px;
+  margin-left: 10px;
+  color: #4c4c4c; }
+
+#nav .nav2 .menu2-first .channel {
+  font-size: 14px;
+  font-weight: bold;
+  color: #4c4c4c;
+  display: block;
+  float: left; }
+
+#nav .nav2 .menu2-first .ticket {
+  display: block;
+  float: left;
+  color: #4c4c4c;
+  margin-left: 10px; }
+
+#nav .nav2 .menu2-first .special {
+  display: block;
+  float: left;
+  color: #4c4c4c;
+  margin-left:17px;
+  }
+
+#nav .nav2 .menu2-first .venue {
+  display: block;
+  float: left;
+  color: #4c4c4c;
+  margin-left: 30px; }
+
+#nav .nav2 .menu2-first .newest {
+  display: block;
+  float: left;
+  color: #4c4c4c;
+  margin-left: 30px;
+  margin-right: 56px; }
+
+#nav .nav2 .menu2-first .integral {
+  display: block;
+  color: #4c4c4c;
+  margin-left: 42px; }
+
+#nav .nav2 .menu2-second {
+  width: 358px;
+  height: 64px;
+  float: left;
+  border-bottom: 1px dashed #4c4c4c;
+  margin-left: 15px;
+  margin-top: 15px; }
+
+#nav .nav2 .menu2-second .classify {
+  font-size: 14px;
+  font-weight: bold;
+  color: #4c4c4c;
+  display: block;
+  float: left; }
+
+#nav .nav2 .menu2-second .vocal {
+  display: block;
+  float: left;
+  color: #4c4c4c;
+  margin-left: 10px; }
+
+#nav .nav2 .menu2-second .music {
+  display: block;
+  float: left;
+  color: #4c4c4c;
+  margin-left: 37px; }
+
+#nav .nav2 .menu2-second .drama {
+  display: block;
+  float: left;
+  color: #4c4c4c;
+  margin-left: 39px; }
+
+#nav .nav2 .menu2-second .dance {
+  display: block;
+  float: left;
+  color: #4c4c4c;
+  margin-left: 16px; }
+
+#nav .nav2 .menu2-second .opera {
+  display: block;
+  float: left;
+  color: #4c4c4c;
+  margin-left: 42px; }
+
+#nav .nav2 .menu2-second .child {
+  display: block;
+  float: left;
+  color: #4c4c4c;
+  margin-left: 26px; }
+
+#nav .nav2 .menu2-second .entertainment {
+  display: block;
+  float: left;
+  color: #4c4c4c;
+  margin-left: 27px; }
+
+#nav .nav2 .menu2-second .pm {
+  display: block;
+  float: left;
+  color: #4c4c4c;
+  margin-left: 26px; }
+
+
+  #nav .nav2 .menu2-third{
+    width:305px;
+    margin-top:15px;
     margin-left:15px;
-}
-#nav .nav1 .add a{
-    height:30px;
-    line-height: 30px;
-    display: block;
-    color:#4c4c4c;
+    float:left;
+  }
 
-}
-#nav .nav1 .system{
-    float:left;
-    margin-left:9px;
-}
-#nav .nav1 .system .span1{
-    float:left;
+  #nav .nav2 .menu2-third .area {
+    font-size: 14px;
+    font-weight: bold;
+    color: #4c4c4c;
     display: block;
-    height:30px;
-    line-height: 30px;
-}
-#nav .nav1 .system .login{
-    height:30px;
-    line-height: 30px;
+    float: left; }
+
+  #nav .nav2 .menu2-third .bj{
+    margin-left:10px; 
     display: block;
-    color:#4c4c4c;
     float: left;
-   
-}
+    color: #4c4c4c;
+  }
 
-#nav .nav1 .system .register{
-    height:30px;
-    line-height: 30px;
+  #nav .nav2 .menu2-third .sh{
+    margin-left:50px; 
     display: block;
-    color:#4c4c4c;
-    float:left;
-    margin-left:4px;
-}
+    float: left;
+    color: #4c4c4c;
+  }
 
-#nav .nav1 a:hover{
-    color:#cd0000
-}
-#nav .nav1 .system a:hover{
-    color:#cd0000
-}
+  #nav .nav2 .menu2-third .gz{
+    margin-left:50px; 
+    display: block;
+    float: left;
+    color: #4c4c4c;
+  }
 
-#nav .nav1 .my{
+  #nav .nav2 .menu2-third .sz{
+    margin-left:50px; 
+    display: block;
+    float: left;
+    color: #4c4c4c;
+  }
+
+  #nav .nav2 .menu2-third .tj{
+    margin-left:43px; 
+    display: block;
+    float: left;
+    color: #4c4c4c;
+  }
+
+  #nav .nav2 .menu2-third .nj{
+    margin-left:50px; 
+    display: block;
+    float: left;
+    color: #4c4c4c;
+  }
+
+  #nav .nav2 .menu2-third .cd{
+    margin-left:50px; 
+    display: block;
+    float: left;
+    color: #4c4c4c;
+  }
+
+  #nav .nav2 .menu2-third .cq{
+    margin-left:50px; 
+    display: block;
+    float: left;
+    color: #4c4c4c;
+  }
+
+  #nav .nav2 .iphone{
+    width:48px;
     height:30px;
     line-height:30px;
-    margin-left:15px;
     float:left;
-}
+    margin-left:10px;
+  }
 
-#nav .nav1 .my .yl{
+
+  #nav .nav2 .iphone .icon{
     display: block;
+    height:30px;
+    line-height: 30px;
+    width:48px;
     color:#4c4c4c;
     float:left;
-}
-#nav .nav1 .my .yl p{
-    float:left;
-}
-#nav .nav1 .my .yl em{
-    display: block;
-    width:13px;
-    height:14px;
-    background:url(../images/pic1.jpg) no-repeat;
-    margin-top:8px; 
-    margin-left:5px;
-    float:left;
-}
-#nav .nav1 .my li{
-    width:74px;
-    
-}
-#nav .nav1 .my li .li1-1 span{
-    width:74px;
-    display: block;
-} 
+  }
 
-#nav .nav1 .my li .li1-1 span a{
-    width:68px;
+  #nav .nav2 .iphone  .erweima{
     display: block;
-    color:#4c4c4c
-} 
-#nav .nav1 .my li:hover{
-    background:#fff;
+    height:160px;
+    width:120px;
+    background: #fff;
     border:3px solid #dddddd;
-    width:68px;
-}
-#nav .nav1 .my li .li1-1{
+    position: absolute;
+    top:30px;
     display: none;
-}
-#nav .nav1 .my li:hover .li1-1{
-    display: block;
-   
-}
-#nav .nav1 .my li:hover .li1-1 a:hover{
-    color:#cd0000
-}
-#nav .nav1 .my li:hover .yl{
-    color:#cd0000
-}
+    z-index: 9;
+  }
 
-#nav .nav2{
-    height:30px;
-    margin-left:552px;
-    float:left;
+  #nav .nav2 .iphone  .erweima img{
+    width:100px;
+    height:100px;
+    margin-left:10px;
+    margin-top:13px;
+  }
 
-}
-#nav .nav2 .dh{
-    width:75px;
-    height:30px;
-    float:left;
-}
-#nav .nav2 .dh li{
-    width:75px;
-    height:30px;
-}
-#nav .nav2 .dh li a{
+  #nav .nav2 .iphone  .erweima .ios{
     color:#4c4c4c;
-    display: block;
+    margin-left:28px;
     float:left;
-}
-#nav .nav2 .dh li a p{
+    margin-top:-15px;
+  }
+  #nav .nav2 .iphone  .erweima .Android{
+    color:#4c4c4c;
+    margin-left:17px;
     float:left;
-}
-#nav .nav2 .dh li a em{
-    width:13px;
-    height: 14px;
-    display: block;
-    background:url(../images/pic1.jpg) no-repeat;
-    margin-top:8px; 
-    margin-left:5px;
-    float:left;
-}
+    margin-top:-10px;
+  }
 
-#nav .nav2 .menu2{
-    box-sizing: border-box;
-    width:386px;
-    height:500px;
-    border:3px solid #dddddd;
-    float: left;
-}
+  #nav .nav2  .online{
+    display: block;
+    height:30px;
+    line-height: 30px;
+    width:48px;
+    color:#4c4c4c;
+    float:left;
+    margin-left:20px;
+  }
 
-#nav .nav2 .menu2-first{
-    width:360px;
-    height:65px;
-    border-bottom: 1px dashed #4c4c4c;
+  #nav .nav2  .online .service{
+    display: block;
+    height:30px;
+    line-height: 30px;
+    width:48px;
+    color:#4c4c4c;
+    float:left;
+  }
+  #nav .nav2  .online .service:hover{
+    color:#cd0000;
+  }
+
+  #nav .nav2  .help{
+    display: block;
+    height:30px;
+    line-height: 30px;
+    width:48px;
+    color:#4c4c4c;
+    float:left;
+    margin-left:20px;
+  }
+
+  #nav .nav2  .help .center{
+    display: block;
+    height:30px;
+    line-height: 30px;
+    width:48px;
+    color:#4c4c4c;
+    float:left;
+  }
+
+  #nav .nav2  .help .center:hover{
+    color:#cd0000;
+  }
+
+  #nav .nav2 .wb{
+    width:68px;
+    height:20px;
+    float:left;
     margin-left:15px;
-    margin-top:15px;
-    float: left;
-}
+    margin-top:4px;
+    background:#f3f3f3;
+    border:1px solid #dddddd;
+    list-style: none;
+    outline: none;
+  }
+
+  #nav .nav2 .wb .weibo{
+    width:16px;
+    height:14px;
+    margin-left:-4px;
+    float:left;
+  }
+
+  #nav .nav2 .wb p{
+    float:left;
+    font-size:12px;
+    height:20px;
+    margin-left:16px;
+    margin-top:-15px;
+  }
+
+  /*动画图效果*/
+  #animation{
+    width:1200px;
+    height:290px;
+    /* overflow: hidden; */
+    border: 1px solid #000000;
+    margin-left:75px;
+    position: relative;
+  }
+
+  #animation .cartoon{
+    width:1200px;
+    height:290px;
+    float:left;
+    margin: auto;
+    /* margin-left:75px; */
+    border: 1px solid #000000;
+  }
+
+  #animation .cartoon .cameracature{
+    width:1200px;
+    height:290px;
+    display: block;
+
+  }
+
+
+  #animation .cartoon .big{
+    width:1200px;
+    height:290px;
+  }
+
+  #animation .drawing{
+    display: none;
+    height:100px;
+  }
+  #animation .cartoon .drawing .small{
+    width:1200px;
+    height:100px;
+    /* display: none */
+  }
+  #animation .retract{
+    width: 21px;
+    height: 53px;
+    cursor: pointer;
+    background: url(https://static.228.com.cn/resources/images/adBtn.png) no-repeat;
+    position: absolute;
+    right: 0;
+    top:0;
+  }
+
+  /*section-top*/
+  #section-top{
+    width:100%;
+    height:118px;
+  }
+
+  #section-top .top1{
+    width:1200px;
+    height:118px;
+    float:left;
+    margin-left:75px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
