@@ -53,3 +53,11 @@ gulp.task("sass", () =>{
            .pipe(gulp.dest("dist/css"))
            .pipe(gulp.dest("css"))
 })
+
+gulp.task("js", ()=>{
+    return gulp.src("js/*.js").pipe(gulp.dest("dist/js")).pipe(connect.reload());;
+})
+
+gulp.task("images", ()=>{
+    return gulp.src("images/*").pipe(gulp.dest("dist/images")).pipe(connect.reload());;
+})
