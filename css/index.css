@@ -1137,5 +1137,146 @@ body {
     color:#c11b1b
 }
 
+#section-all .third{
+  width:1200px;
+  height:332px;
+  margin-left:75px;
+  margin-top:18px;
+
+}
+
+#section-all .third .third-left{
+        padding: 19px 16px;
+        width: 916px;
+        height: 292px;
+        border: 1px #d5d5d5 solid;
+        background: #fff;
+        float: left;
+        position: relative;
+        z-index: 10;
+        border-radius: 2px;
+}
+
+#section-all .third .third-left .hot-recommand{
+      width:916px;
+      height:21px;
+      margin-bottom:15px;
+}
+
+#section-all .third .third-left .hot-recommand .block{
+      width:12px;
+      height:19px;
+      background: #de2221;
+      border-radius: 3px;
+      float:left;
+}
+
+#section-all .third .third-left .hot-recommand h2{
+  color:#c91414;
+  font-size:18px;
+  line-height:19px;
+  margin-left:10px;
+  margin-right:18px;
+  float:left;
+}
+
+#section-all .third .third-left .hot-recommand a{
+    margin-right: 10px;
+    color:#4c4c4c;
+    float:left;
+}
+
+#section-all .third .third-left .anniu ul{
+            width: 65px;
+            height: 15px;
+            position: absolute;
+            left: 866px;
+            top: 24px;
+}
+
+
+#section-all .third .third-left .anniu ul li{
+            width: 10px;
+            height: 10px;
+            display: block;
+            background-position: 0 -269px;
+            margin-right: 4px;
+            float:left;
+            background: #d6d6d6;
+            border-radius:50% ;
+            position: relative;
+}
+
+#section-all .third .third-left .banner2{
+            position: absolute;
+            /* height: 300px; */
+            left: 19px;
+            padding-left: 16px;
+}
+#section-all .third .third-left .banner2 li{
+  height: 300px;
+}
+
+#section-all .third .third-left .banner2 img{
+          width:150px;
+          height:200px;
+}
+
+#section-all .third .third-left .banner2 .title{
+        width:146px;
+        height:32px;
+        line-height:18px;
+        text-align: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: block;
+        color:#4c4c4c;
+        margin-top:17px;
+}
+
+#section-all .third .third-left .banner2 .title:hover{
+        color:#c11b1b;
+}
+
+#section-all .third .third-left .banner2 dl{
+  float:left;
+  margin-right:29px;
+}
+
+
+#section-all .third .third-left .banner2 .b2{
+      display: none
+}
+
+
+#section-all .third .third-left .banner2 .b3{
+     display: none
+}
+
+
+#section-all .third .third-right{
+  width: 210px;
+  height: 300px;
+  border: 1px #d5d5d5 solid;
+  background: #fff;
+  float: left;
+  border-radius: 2px;
+  padding: 15px 14px;
+  position: relative;
+  left: 10px;
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
