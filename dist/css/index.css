@@ -1296,6 +1296,10 @@ body {
   margin: 0 auto;
   margin-bottom: 8px;
 }
+#section-all .third .third-right dl dd img{
+    width:210px;
+    height:120px;
+}
 
 #section-all .third .third-right dl dt a {
   color:#4c4c4c;
@@ -1925,6 +1929,7 @@ display: none
    margin-left: 35px;
    padding-left:20px; 
    padding-top:28px;
+   overflow: hidden;
 }
 
 #section-all .sixth .sixth-left .selection .big-box .yan1{
@@ -1933,6 +1938,7 @@ display: none
   float:left;
   margin-right: 33px;
   margin-bottom: 27px;
+  margin-top:3px;
   overflow: hidden;
  
 }
@@ -1962,7 +1968,8 @@ display: none
   height:35px;
   float:left;
   text-align: left;
-  color:#111111
+  color:#111111;
+  font-size:12px;
 }
 
 
@@ -1978,7 +1985,7 @@ display: none
 #section-all .sixth .sixth-left .selection .big-box .yan1 .title1 .address{
       display: block;
       font-size: 12px;  
-      margin-left:-10px;
+      
       height:14px;
       margin-top:10px;
 }
@@ -1986,13 +1993,14 @@ display: none
   display: block;
   color:#666666;
   font-size: 12px;  
+  text-align: left;
 
 } 
 
 
 #section-all .sixth .sixth-left .selection .big-box .yan1 .title1 .price{
   font-size: 12px;  
-  margin-left:-95px;
+  margin-left:-85px;
   height:14px;
   margin-top:10px;
 }
@@ -2007,33 +2015,138 @@ display: none
 }
 
 
+.pop-sing{
+  color:#727272;
+}
 
 
+#section-all .sixth .sixth-right{
+    width:210px;
+    float:right;
+}
 
 
+#section-all .sixth .sixth-right .right-top{
+    height:25px;
+    border-bottom:2px solid #ba1414
+}
+
+#section-all .sixth .sixth-right .right-top .six-box{
+  width:12px;
+  height:19px;
+  background: #de2221;
+  border-radius: 3px;
+  float:left;
+}
+#section-all .sixth .sixth-right .right-top h2{
+  color:#de2221;
+  font-size:18px;
+  line-height:19px;
+  margin-left:10px;
+  margin-right:13px;
+  float:left;
+}
+
+#section-all .sixth .sixth-right .right-top p{
+ color:#999999;
+ 
+}
+
+#section-all .sixth .sixth-right .right-center{
+   width:210px;
+   height:169px;
+   margin-top:15px;
+}
 
 
+#section-all .sixth .sixth-right .right-center img{
+  width:210px;
+  height:120px;
+  
+}
+
+#section-all .sixth .sixth-right .right-center .mww{
+ text-align: center;
+ width:210px;
+ height:33px;
+ display: block;
+ line-height:20px;
+ margin-top:15px;
+ color:#4c4c4c
+  
+}
+
+#section-all .sixth .sixth-right .right-center .mww:hover{
+  color:#de2221
+}
+
+#section-all .sixth .sixth-right .right-bottom{
+    width:210px;
+    height:198px;
+    margin-top:15px;
+
+}
+
+#section-all .sixth .sixth-right .right-bottom .r1{
+  width:210px;
+  height:48px;
+  display: block;
+  color:#4c4c4c;
+  text-align: left;
+}
+#section-all .sixth .sixth-right .right-bottom .r1 .zero2 {
+  width:21px;
+  height:40px;
+  border-top:2px solid #d7d5d6;
+  font-size: 16px;
+  font-weight: bold;
+  float:left;
+  padding-top:8px;
+}
 
 
+#section-all .sixth .sixth-right .right-bottom .r1 .zxz{
+  width:186px;
+  height:40px;
+  border-top:1px dotted #d7d5d6;
+  padding-top:8px;
+  padding-left:3px;
+}
 
+#section-all .sixth .sixth-right .right-bottom .r1 .zxz:hover{
+  color:#de2221
+}
 
+#section-all .sixth .sixth-right .right-bottom .r2{
+  width:210px;
+  height:48px;
+  display: block;
+  color:#4c4c4c;
+ 
+}
 
+#section-all .sixth .sixth-right .right-bottom .r2 .zero3 {
+  width:21px;
+  height:40px;
+  border-top:2px solid #d7d5d6;
+  font-size: 16px;
+  font-weight: bold;
+  float:left;
+  padding-top:8px;
+  margin-left:-21px
+}
 
+#section-all .sixth .sixth-right .right-bottom .r2 .mly{
+  width:186px;
+  height:40px;
+  border-top:1px dotted #d7d5d6;
+  padding-top:8px;
+  padding-left:3px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#section-all .sixth .sixth-right .right-bottom .r2 .mly:hover{
+  color:#de2221
+}
 
 
 
