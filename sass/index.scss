@@ -493,7 +493,7 @@ body {
 
   #animation{
     width:1200px;
-    height:290px;
+    /* height:290px; */
     /* overflow: hidden; */
     border: 1px solid #000000;
     margin-left:75px;
@@ -507,13 +507,17 @@ body {
     margin: auto;
     /* margin-left:75px; */
     border: 1px solid #000000;
+    overflow: hidden;
+    transition: 1s
+
   }
 
   #animation .cartoon .cameracature{
     width:1200px;
     height:290px;
     display: block;
-
+    overflow: hidden;
+    transition: 1s;
   }
 
 
@@ -523,12 +527,15 @@ body {
   }
 
   #animation .drawing{
-    display: none;
+    /* display: none; */
     height:100px;
+    overflow: hidden;
+    transition: 1s;
+    display: block;
   }
   #animation .cartoon .drawing .small{
     width:1200px;
-    height:100px;
+    /* height:0; */
     /* display: none */
   }
   #animation .retract{
@@ -540,6 +547,15 @@ body {
     right: 0;
     top:0;
   }
+  /* #animation .spread{
+    width: 21px;
+    height: 53px;
+    cursor: pointer;
+    background: url(https://static.228.com.cn/resources/images/adBtn.png) no-repeat;
+    position: absolute;
+    right: 0;
+    top:0;
+  } */
 
   /*section-top*/
   #section-top{
@@ -984,7 +1000,7 @@ font-size:14px;
   left:196px;
   z-index: 10;
   border:1px solid #a5a5a5;
-  /* display: none; */
+  display: none;
 }
 #section-all .second .second-left .ul1-4 li{
   width:104px;
@@ -1024,6 +1040,33 @@ font-size:14px;
   font-size:14px;
 }
 
+#section-all .second .second-left .ul1-5{
+  width:116px;
+  height:240px;
+  background:#fff;
+  position: absolute;
+  top:162px;
+  left:196px;
+  z-index: 100;
+  border:1px solid #a5a5a5;
+  display: none;
+}
+#section-all .second .second-left .ul1-5 li{
+  width:104px;
+  height:29px;
+  border-bottom: 1px dotted #b2b2b2;
+  margin-left:8px;
+}
+#section-all .second .second-left .ul1-5 li a{
+width:104px;
+height:29px;
+text-align: left;
+line-height: 29px;
+display: block;
+color:#888888;
+font-size:14px;
+}
+
 #section-all .second .second-left .six{
   width:196px;
   height:40px;
@@ -1045,7 +1088,32 @@ font-size:14px;
   color:#6b6767;
   font-size:14px;
 }
-
+#section-all .second .second-left .ul1-6{
+  width:116px;
+  height:240px;
+  background:#fff;
+  position: absolute;
+  top:220px;
+  left:196px;
+  z-index: 100;
+  border:1px solid #a5a5a5;
+  display: none;
+}
+#section-all .second .second-left .ul1-6 li{
+  width:104px;
+  height:29px;
+  border-bottom: 1px dotted #b2b2b2;
+  margin-left:8px;
+}
+#section-all .second .second-left .ul1-6 li a{
+width:104px;
+height:29px;
+text-align: left;
+line-height: 29px;
+display: block;
+color:#888888;
+font-size:14px;
+}
 
 #section-all .second .second-left .seven{
   width:196px;
@@ -1069,6 +1137,35 @@ font-size:14px;
   font-size:14px;
 }
 
+#section-all .second .second-left .ul1-7{
+  width:116px;
+  height:150px;
+  background:#fff;
+  position: absolute;
+  top:240px;
+  left:196px;
+  z-index: 100;
+  border:1px solid #a5a5a5;
+  display: none;
+}
+#section-all .second .second-left .ul1-7 li{
+  width:104px;
+  height:29px;
+  border-bottom: 1px dotted #b2b2b2;
+  margin-left:8px;
+}
+#section-all .second .second-left .ul1-7 li a{
+width:104px;
+height:29px;
+text-align: left;
+line-height: 29px;
+display: block;
+color:#888888;
+font-size:14px;
+}
+
+
+
 #section-all .second .second-left .eight{
   width:196px;
   height:40px;
@@ -1090,6 +1187,36 @@ font-size:14px;
   color:#6b6767;
   font-size:14px;
 }
+
+#section-all .second .second-left .ul1-8{
+  width:116px;
+  height:269px;
+  background:#fff;
+  position: absolute;
+  top:280px;
+  left:196px;
+  z-index: 100;
+  border:1px solid #a5a5a5;
+  display: none;
+}
+#section-all .second .second-left .ul1-8 li{
+  width:104px;
+  height:29px;
+  border-bottom: 1px dotted #b2b2b2;
+  margin-left:8px;
+}
+#section-all .second .second-left .ul1-8 li a{
+width:104px;
+height:29px;
+text-align: left;
+line-height: 29px;
+display: block;
+color:#888888;
+font-size:14px;
+}
+
+
+
 
 #section-all .second .second-left .nine{
   width:196px;
@@ -1746,7 +1873,7 @@ display: none
   position: absolute;
   left: 0;
   top:0;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 #section-all .fifth ul .pic1 a{
   height:310px;

@@ -52,23 +52,66 @@ $(".hang3").hover(function(){
     $(this).find("p").css({"color":"#6b6767","font-weight":"normal"});
 })
 
-// $(".hang4").hover(function(){
-//     $(this).find(".ul1-4").show();
-//     $(this).find(".four").css({"background":"#88766e","color":"#fff","font-weight":"bold","position":"relative","z-index":"11"});
-//     $(this).find("p").css({"color":"#fff","font-weight":"bold","position":"relative","z-index":"11"});
-// },function(){
-//     $(this).find(".ul1-4").hide();
-//     $(this).find(".four").css({"background":0});
-//     $(this).find("p").css({"color":"#6b6767","font-weight":"normal"});
-// })
+$(".hang4").hover(function(){
+    $(this).find(".ul1-4").show();
+    $(this).find(".one").css({"background":"#88766e","color":"#fff","font-weight":"bold","position":"relative","z-index":"11"});
+    $(this).find("p").css({"color":"#fff","font-weight":"bold","position":"relative","z-index":"11"});
+    // $(this).find(".ul1-1 a").css({"color":"#d82929"});
+},function(){
+    $(this).find(".ul1-4").hide();
+    $(this).find(".one").css({"background":0});
+    $(this).find("p").css({"color":"#6b6767","font-weight":"normal"});
+    // $(this).find(".ul1-1 a").css({"color":"#888888"});
+})
 
 
 
+$(".hang5").hover(function(){
+    $(this).find(".ul1-5").show();
+    $(this).find(".one").css({"background":"#88766e","color":"#fff","font-weight":"bold","position":"relative","z-index":"11"});
+    $(this).find("p").css({"color":"#fff","font-weight":"bold","position":"relative","z-index":"11"});
+    // $(this).find(".ul1-1 a").css({"color":"#d82929"});
+},function(){
+    $(this).find(".ul1-5").hide();
+    $(this).find(".one").css({"background":0});
+    $(this).find("p").css({"color":"#6b6767","font-weight":"normal"});
+    // $(this).find(".ul1-1 a").css({"color":"#888888"});
+})
+
+$(".hang6").hover(function(){
+    $(this).find(".ul1-6").show();
+    $(this).find(".one").css({"background":"#88766e","color":"#fff","font-weight":"bold","position":"relative","z-index":"11"});
+    $(this).find("p").css({"color":"#fff","font-weight":"bold","position":"relative","z-index":"11"});
+    // $(this).find(".ul1-1 a").css({"color":"#d82929"});
+},function(){
+    $(this).find(".ul1-6").hide();
+    $(this).find(".one").css({"background":0});
+    $(this).find("p").css({"color":"#6b6767","font-weight":"normal"});
+    // $(this).find(".ul1-1 a").css({"color":"#888888"});
+})
+
+$(".hang7").hover(function(){
+    $(this).find(".ul1-7").show();
+    $(this).find(".two").css({"background":"#88766e","color":"#fff","font-weight":"bold","position":"relative","z-index":"11"});
+    $(this).find("p").css({"color":"#fff","font-weight":"bold","position":"relative","z-index":"11"});
+},function(){
+    $(this).find(".ul1-7").hide();
+    $(this).find(".two").css({"background":0});
+    $(this).find("p").css({"color":"#6b6767","font-weight":"normal"});
+})
 
 
-
-
-
+$(".hang8").hover(function(){
+    $(this).find(".ul1-8").show();
+    $(this).find(".one").css({"background":"#88766e","color":"#fff","font-weight":"bold","position":"relative","z-index":"11"});
+    $(this).find("p").css({"color":"#fff","font-weight":"bold","position":"relative","z-index":"11"});
+    // $(this).find(".ul1-1 a").css({"color":"#d82929"});
+},function(){
+    $(this).find(".ul1-8").hide();
+    $(this).find(".one").css({"background":0});
+    $(this).find("p").css({"color":"#6b6767","font-weight":"normal"});
+    // $(this).find(".ul1-1 a").css({"color":"#888888"});
+})
 
 
 
