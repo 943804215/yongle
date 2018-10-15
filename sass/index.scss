@@ -1901,6 +1901,7 @@ display: none
   position: absolute;
   left: 230px;
   top:0;
+  overflow: hidden;
 }
 #section-all .fifth ul .pic2 a{
   height:150px;
@@ -1909,6 +1910,19 @@ display: none
 #section-all .fifth ul .pic2 a img{
   display: block;
 }
+#section-all .fifth ul .pic2 .background2{
+  width:150px;
+  height:150px;
+  background:#bf1919;
+  opacity: 0.8;
+  color:#fff;
+  font-weight: bold;
+  position: absolute;
+  top:0;
+  left:-150px;
+  font-size:14px;
+  overflow: hidden;
+}
 
 #section-all .fifth ul .pic3{
   width:320px;
@@ -1916,6 +1930,7 @@ display: none
   position: absolute;
   left: 390px;
   top:0;
+  overflow: hidden;
 }
 #section-all .fifth ul .pic3 a{
   height:150px;
@@ -1925,12 +1940,30 @@ display: none
   display: block;
 }
 
+#section-all .fifth ul .pic3 .background3{
+  width:320px;
+  height:150px;
+  background:#bf1919;
+  opacity: 0.8;
+  color:#fff;
+  font-weight: bold;
+  position: absolute;
+  top:0;
+  left:-320px;
+  font-size:14px;
+  overflow: hidden;
+}
+
+
+
+
 #section-all .fifth ul .pic4{
   width:320px;
   height:150px;
   position: absolute;
   left: 230px;
   top:160px;
+  overflow: hidden;
 }
 #section-all .fifth ul .pic4 a{
   height:150px;
@@ -1940,12 +1973,27 @@ display: none
   display: block;
 }
 
+#section-all .fifth ul .pic4 .background4{
+  width:320px;
+  height:150px;
+  background:#bf1919;
+  opacity: 0.8;
+  color:#fff;
+  font-weight: bold;
+  position: absolute;
+  top:0;
+  left:-320px;
+  font-size:14px;
+  overflow: hidden;
+}
+
 #section-all .fifth ul .pic5{
   width:150px;
   height:150px;
   position: absolute;
   left: 560px;
   top:160px;
+  overflow: hidden;
 }
 #section-all .fifth ul .pic5 a{
   height:150px;
@@ -1955,12 +2003,29 @@ display: none
   display: block;
 }
 
+#section-all .fifth ul .pic5 .background5{
+  width:150px;
+  height:150px;
+  background:#bf1919;
+  opacity: 0.8;
+  color:#fff;
+  font-weight: bold;
+  position: absolute;
+  top:0;
+  left:-150px;
+  font-size:14px;
+  overflow: hidden;
+}
+
+
+
 #section-all .fifth ul .pic6{
   width:320px;
   height:310px;
   position: absolute;
   left:720px;
   top:0;
+  overflow: hidden;
 }
 #section-all .fifth ul .pic6 a{
   height:310px;
@@ -1970,12 +2035,33 @@ display: none
   display: block;
 }
 
+#section-all .fifth ul .pic6 .background6{
+  width:320px;
+  height:310px;
+  background:#bf1919;
+  opacity: 0.8;
+  color:#fff;
+  font-weight: bold;
+  position: absolute;
+  top:0;
+  left:-320px;
+  font-size:14px;
+  overflow: hidden;
+}
+
+
+
+
+
+
+
 #section-all .fifth ul .pic7{
   width:150px;
   height:150px;
   position: absolute;
   left: 1050px;
   top:0;
+  overflow: hidden;
 }
 #section-all .fifth ul .pic7 a{
   height:150px;
@@ -1985,12 +2071,29 @@ display: none
   display: block;
 }
 
+#section-all .fifth ul .pic7 .background7{
+  width:150px;
+  height:150px;
+  background:#bf1919;
+  opacity: 0.8;
+  color:#fff;
+  font-weight: bold;
+  position: absolute;
+  top:0;
+  left:-150px;
+  font-size:14px;
+  overflow: hidden;
+}
+
+
+
 #section-all .fifth ul .pic8{
   width:150px;
   height:150px;
   position: absolute;
   left: 1050px;
   top:160px;
+  overflow: hidden;
 }
 #section-all .fifth ul .pic8 a{
   height:150px;
@@ -1998,6 +2101,21 @@ display: none
 
 #section-all .fifth ul .pic8 a img{
   display: block;
+}
+
+
+#section-all .fifth ul .pic8 .background8{
+  width:150px;
+  height:150px;
+  background:#bf1919;
+  opacity: 0.8;
+  color:#fff;
+  font-weight: bold;
+  position: absolute;
+  top:0;
+  left:-150px;
+  font-size:14px;
+  overflow: hidden;
 }
 
 

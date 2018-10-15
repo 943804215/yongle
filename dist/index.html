@@ -1159,57 +1159,57 @@
                     <a href="#" class="p1-pic2">
                         <img src="http://static.228.cn/upload/vouchsafe/2018/07/12/1531385453883_a6s3_m1.jpg">
                     </a>
-                    <!-- <div class="background1">
-                        2018热门大牌明星巡回演唱会，永乐票务为您精细梳理，密切追踪！
-                    </div> -->
+                    <div class="background2">
+                        格莱美奖得主及史上 最畅销女歌手、流行音乐天后Mariah Carey玛丽亚·凯莉将于2018年登陆中国深圳火爆开唱。本次巡回演唱会中，Mariah Carey将为中国歌迷呈现《Emotions》、《Hero》、《Without You》、《We Belong Together》等经典歌曲。
+                    </div>
                </li>
                <li class="pic3">
                     <a href="#" class="p1-pic3">
                         <img src="http://static.228.cn/upload/vouchsafe/2017/12/06/1512547545134_d1t5_m1.jpg">
                     </a>
-                    <!-- <div class="background1">
-                        2018热门大牌明星巡回演唱会，永乐票务为您精细梳理，密切追踪！
-                    </div> -->
+                    <div class="background3">
+                        中国观众音乐剧启蒙，最受观众喜爱的剧目 2003年、2008年两度来华一票难求！万人空巷！ 阔别十年2018世界经典原版音乐剧《猫》再度来华
+                    </div>
                </li>
                <li class="pic4">
                     <a href="#" class="p1-pic4">
                         <img src="http://static.228.cn/upload/vouchsafe/2018/05/25/1527227884202_n0f3_m1.jpg">
                     </a>
-                    <!-- <div class="background1">
-                        2018热门大牌明星巡回演唱会，永乐票务为您精细梳理，密切追踪！
-                    </div> -->
+                    <div class="background4">
+                        打破梦幻与现实的分界线，平行时空的故事终于成为这世界最奇妙的寓言。重返梦想开始的地方，开启张韶涵的绝美「旅程」。至真至美诚意呈现，全新打造属于Angela的世界，百变歌声全新演绎，突破音乐的无限可能。
+                    </div>
                </li>
                <li class="pic5">
                     <a href="#" class="p1-pic5">
                         <img src="http://static.228.cn/upload/vouchsafe/2018/07/31/1533019246411_h4f7_m1.jpg">
                     </a>
-                    <!-- <div class="background1">
-                        2018热门大牌明星巡回演唱会，永乐票务为您精细梳理，密切追踪！
-                    </div> -->
+                    <div class="background5">
+                        必将会燃到炸裂的OLive橄榄现场，欢迎来到谢天笑的音乐世界！
+                    </div>
                </li>
                <li class="pic6">
                     <a href="#" class="p1-pic6">
                         <img src="http://static.228.cn/upload/vouchsafe/2018/09/14/1536906312284_i9b8_m1.jpg">
                     </a>
-                    <!-- <div class="background1">
-                        2018热门大牌明星巡回演唱会，永乐票务为您精细梳理，密切追踪！
-                    </div> -->
+                    <div class="background6">
+                        百老汇音乐剧《芝加哥》：一个女歌手，一个背负着两条人命的凶手，一个能说会道的律师和一个充满罪恶的牢房……这是一场极致的黑色幽默。国际班底原版呈现！
+                    </div>
                </li>
                <li class="pic7">
                     <a href="#" class="p1-pic7">
                         <img src="http://static.228.cn/upload/vouchsafe/2018/09/06/1536206519582_k2z7_m1.jpg">
                     </a>
-                    <!-- <div class="background1">
-                        2018热门大牌明星巡回演唱会，永乐票务为您精细梳理，密切追踪！
-                    </div> -->
+                    <div class="background7">
+                        OLive橄榄现场呈现·2018杨乃文
+                    </div>
                </li>
                <li class="pic8">
                     <a href="#" class="p1-pic8">
                         <img src="http://static.228.cn/upload/vouchsafe/2018/06/15/1529058868675_r3p0_m1.jpg">
                     </a>
-                    <!-- <div class="background1">
-                        2018热门大牌明星巡回演唱会，永乐票务为您精细梳理，密切追踪！
-                    </div> -->
+                    <div class="background8">
+                        2018 莫文蔚出道25周年 魅力开启色艺双绝新巡演
+                    </div>
                </li>
            </ul>
         </div>
@@ -3690,6 +3690,7 @@
          })
          var timer = null;
          var i=$(this).index();
+        //  console.log(i)
          autoPlay();
          function autoPlay(){
 				//定时器
@@ -3700,12 +3701,13 @@
 					}
 					i++;
                    slide();
+                   console.log(i)
 				},2000)
 				$('.anniu ul li').hover(function(){
-					clearInterval(timer);
+                    clearInterval(timer);
 				},function(){
-					autoPlay;
-				})
+                    autoPlay;
+                })
 			}
             function slide(){
 				//大图
@@ -3713,9 +3715,7 @@
 				//重置圆点的样式
 				$('.anniu ul li').eq(i).css({background:'red'}).siblings().css({background:'#d6d6d6'});
 			}
-   
-   
-   
+      
     </script>
     <!--第三个轮播图-->
     <script>
@@ -3754,12 +3754,13 @@
             var index=$(this).index();
             $(this).css({'background':'#d6d6d6','width':'10px','height':'10px','top':0});
         })
-        var timer = null;
+        var timer1 = null;
         var i=$(this).index();
         autoPlay();
         function autoPlay(){
+                clearInterval()
                 //定时器
-                timer = setInterval(function(){
+                timer1 = setInterval(function(){
                     //调用show函数					
                     if(i==2){
                         i=-1;
@@ -3768,7 +3769,7 @@
                 slide();
                 },2000)
                 $('.anniu1 ul li').hover(function(){
-                    clearInterval(timer);
+                    clearInterval(timer1);
                 },function(){
                     autoPlay;
                 })
@@ -3781,6 +3782,7 @@
             }
     </script>
 
+    <!--滑动效果-->
     <script>
         $(".pic1").mouseenter(function(){
             $(".background1").css({
@@ -3796,6 +3798,119 @@
                 "left":"220px"
             })
         })
+
+        $(".pic2").mouseenter(function(){
+            $(".background2").css({
+                left:"-150px"
+            })
+            $(".background2").animate({
+                "left":0
+            })
+            
+        })
+        $(".pic2").mouseleave(function(){
+            $(".background2").animate({
+                "left":"150px"
+            })
+        })
+
+        $(".pic3").mouseenter(function(){
+            $(".background3").css({
+                left:"-320px"
+            })
+            $(".background3").animate({
+                "left":0
+            })
+            
+        })
+        $(".pic3").mouseleave(function(){
+            $(".background3").animate({
+                "left":"320px"
+            })
+        })
+
+        $(".pic4").mouseenter(function(){
+            $(".background4").css({
+                left:"-320px"
+            })
+            $(".background4").animate({
+                "left":0
+            })
+            
+        })
+        $(".pic4").mouseleave(function(){
+            $(".background4").animate({
+                "left":"320px"
+            })
+        })
+
+         $(".pic5").mouseenter(function(){
+            $(".background5").css({
+                left:"-150px"
+            })
+            $(".background5").animate({
+                "left":0
+            })
+            
+        })
+        $(".pic5").mouseleave(function(){
+            $(".background5").animate({
+                "left":"150px"
+            })
+        })
+
+
+
+         $(".pic6").mouseenter(function(){
+            $(".background6").css({
+                left:"-320px"
+            })
+            $(".background6").animate({
+                "left":0
+            })
+            
+        })
+        $(".pic6").mouseleave(function(){
+            $(".background6").animate({
+                "left":"320px"
+            })
+        })
+
+        $(".pic7").mouseenter(function(){
+            $(".background7").css({
+                left:"-150px"
+            })
+            $(".background7").animate({
+                "left":0
+            })
+            
+        })
+        $(".pic7").mouseleave(function(){
+            $(".background7").animate({
+                "left":"150px"
+            })
+        })
+
+
+         $(".pic8").mouseenter(function(){
+            $(".background8").css({
+                left:"-150px"
+            })
+            $(".background8").animate({
+                "left":0
+            })
+            
+        })
+        $(".pic8").mouseleave(function(){
+            $(".background8").animate({
+                "left":"150px"
+            })
+        })
+
+
+
+
+
     </script>
 
     <!--选项卡点击事件-->
