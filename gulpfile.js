@@ -17,10 +17,24 @@ var cleanCss = require("gulp-clean-css");
 var sass =require("gulp-sass-china")
 
 
+// gulp.task('connect', function() {
+//     connect.server({
+//         root:"dist/",
+//         livereload:true,
+//     })
+// });
 gulp.task('connect', function() {
     connect.server({
+        port:8888,
         root:"dist/",
         livereload:true,
+        // 中间件;
+        middleware:function(connect , opt){
+            var Proxy = require('gulp-connect-proxy');
+            opt.route = '/proxy';
+            var proxy = new Proxy(opt);
+            return [proxy];
+        }
     })
 });
 // 如何发起一个代理请求 : 
@@ -31,7 +45,7 @@ gulp.task("html", ()=>{
 })
 
 gulp.task("watch", ()=>{
-    gulp.watch("index.html",["html","sass"]);
+    gulp.watch("*.html",["html","sass"]);
     gulp.watch("sass/*.scss",["html","sass"]);
 })
 
