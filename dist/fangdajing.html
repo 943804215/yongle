@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>放大镜</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fangdajing.css">
+    <style>
+        #small{height:384px; 
+               width:288px;
+               position:relative;
+               box-shadow: 0 0 5px #000;
+               float:left;
+             
+               }
+        #small img{
+               height:384px; 
+               width:288px;
+        }
+        #frame{
+            width:100px;
+            height:100px;
+            box-shadow: 0 0 5px #000;
+            border-radius: 5px;
+            position:absolute;
+            left:0;
+            top:0;
+            z-index:1;
+            display: none;
+            background-image: url(images/pic107.jpg);
+            background-size: 400px 400px;
+
+        }
+        #film{
+            height:384px; 
+            width:288px;
+            position:absolute;
+            left:0;
+            top:0;
+            z-index: 999;
+            cursor:none;
+        }
+        #big{
+            width:400px;
+            height:400px;
+            box-shadow: 0 0 5px #000;
+            margin-left:100px;
+            float:left;
+            position:absolute;
+            left:200px;
+            top:0;
+            overflow:hidden;
+            display: none
+        }
+        #big img{
+            width:1600px;
+            height:1600px;
+            position: absolute;
+            top:0;
+            left:0;
+        }
+    
+    </style>
+</head>
+<body>
+     <!--导航条部分-->
+     <div id="nav">
+            <div class="nav1">
+                <p class="hello" >Hi,欢迎来到永乐!</p>
+                <p class="add">
+                    <a href="#">
+                        添加收藏
+                    </a>
+                </p>
+                <p class="system">
+                    <span class="span1">
+                        [
+                    </span>     
+                        <a href="#" class="login">
+                            登录
+                        </a>
+                        <a href="#" class="register">
+                                注册
+                        </a>
+                    <span class="span2">
+                        ]
+                    </span>
+                </p>
+                <div class="my">
+                    <ul>
+                        <li>
+                            <a class="yl"  href="#">
+                                <p>我的永乐</p>
+                                <em></em>
+                            </a>
+                            <div class="li1-1">
+                                <span>
+                                    <a href="#">
+                                        我的订单
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#">
+                                        电子钱包
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#">
+                                        我的乐通卡
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#">
+                                        我的积分
+                                    </a>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav2">
+                <div class="dh">
+                    <ul>
+                        <li>
+                            <div class="hz">
+                                <a class="dao" href="#">
+                                    <p>永乐导航</p>
+                                    <em></em>
+                                </a>
+                                <div class="menu2">
+                                        <div class="menu2-first">
+                                            <span class="channel">频道:</span>
+                                                <a class="ticket"  href="#">
+                                                    <p>门票</p>
+                                                </a>
+                                                <a class="special"  href="#">
+                                                    <p>专题会</p>
+                                                </a>
+                                                <a class="venue"  href="#">
+                                                    <p>场馆库</p>
+                                                </a>
+                                                <a  class="newest"  href="#">
+                                                    <p>最新资讯</p>
+                                                </a>
+                                                <a   class="integral"  href="#">
+                                                    <p>积分商城</p>
+                                                </a>    
+                                        </div>
+                                        <div class="menu2-second">
+                                                <span class="classify">分类:</span>
+                                                <a class="vocal"  href="#">
+                                                    <p>演唱会</p>
+                                                </a>
+                                                <a class="music"  href="#">
+                                                    <p>音乐会</p>
+                                                </a>
+                                                <a class="drama"  href="#">
+                                                    <p>话剧舞台剧</p>
+                                                </a>
+                                                <a  class="dance"  href="#">
+                                                    <p>舞蹈芭蕾</p>
+                                                </a>
+                                                <a   class="opera"  href="#">
+                                                    <p>戏曲综艺</p>
+                                                </a>  
+                                                <a class="child"  href="#">
+                                                    <p>儿童亲子</p>
+                                                </a>
+                                                <a class="entertainment"  href="#">
+                                                    <p>休闲娱乐</p>
+                                                </a>
+                                                <a class="pm"  href="#">
+                                                    <p>体育赛事</p>
+                                                </a>     
+                                        </div>
+    
+                                        <div class="menu2-third">
+                                                <span class="area">地区:</span>
+                                                <a class="bj"  href="#">
+                                                    <p>北京</p>
+                                                </a>
+                                                <a class="sh"  href="#">
+                                                    <p>上海</p>
+                                                </a>
+                                                <a class="gz"  href="#">
+                                                    <p>广州</p>
+                                                </a>
+                                                <a  class="sz"  href="#">
+                                                    <p>深圳</p>
+                                                </a>
+                                                <a   class="tj"  href="#">
+                                                    <p>天津</p>
+                                                </a>  
+                                                <a class="nj"  href="#">
+                                                    <p>南京</p>
+                                                </a>
+                                                <a class="cd"  href="#">
+                                                    <p>成都</p>
+                                                </a>
+                                                <a class="cq"  href="#">
+                                                    <p>重庆</p>
+                                                </a>  
+                                                <a class="tj"  href="#">
+                                                    <p>郑州</p>
+                                                </a>  
+                                                <a class="nj"  href="#">
+                                                    <p>西安</p>
+                                                </a>
+                                                <a class="cd"  href="#">
+                                                    <p>武汉</p>
+                                                </a>
+                                                <a class="cq"  href="#">
+                                                    <p>长沙</p>
+                                                </a>
+                                                <a class="tj"  href="#">
+                                                    <p>合肥</p>
+                                                </a>  
+                                                <a class="nj"  href="#">
+                                                    <p>济南</p>
+                                                </a>
+                                                <a class="cd"  href="#">
+                                                    <p>佛山</p>
+                                                </a>
+                                                <a class="cq"  href="#">
+                                                    <p>无锡</p>
+                                                </a>    
+                                                <a   class="tj"  href="#">
+                                                    <p>苏州</p>
+                                                </a>  
+                                                <a class="nj"  href="#">
+                                                    <p>香港</p>
+                                                </a>
+                                                <a class="cd"  href="#">
+                                                    <p>杭州</p>
+                                                </a>
+                                                <a class="cq"  href="#">
+                                                    <p>石家庄</p>
+                                                </a>  
+                                                <a class="tj"  href="#">
+                                                    <p>青岛</p>
+                                                </a>  
+                                                <a class="nj"  href="#">
+                                                    <p>大连</p>
+                                                </a>
+                                                <a class="cd"  href="#">
+                                                    <p>丽江</p>
+                                                </a>
+                                                <a class="cq"  href="#">
+                                                    <p>阳江</p>
+                                                </a>
+                                                <a class="tj"  href="#">
+                                                    <p>芜湖</p>
+                                                </a>  
+                                                <a class="nj"  href="#">
+                                                    <p>贵阳</p>
+                                                </a>
+                                                <a class="cd"  href="#">
+                                                    <p>绍兴</p>
+                                                </a>
+                                                <a class="cq"  href="#">
+                                                    <p>绵阳</p>
+                                                </a>
+                                                <a   class="tj"  href="#">
+                                                    <p>洛阳</p>
+                                                </a>  
+                                                <a class="nj"  href="#">
+                                                    <p>常州</p>
+                                                </a>
+                                                <a class="cd"  href="#">
+                                                    <p>宁波</p>
+                                                </a>
+                                                <a class="cq"  href="#">
+                                                    <p>温州</p>
+                                                </a>  
+                                                <a class="tj"  href="#">
+                                                    <p>青岛</p>
+                                                </a>  
+                                                <a class="nj"  href="#">
+                                                    <p>南昌</p>
+                                                </a>
+                                                <a class="cd"  href="#">
+                                                    <p>威海</p>
+                                                </a>
+                                                <a class="cq"  href="#">
+                                                    <p>厦门</p>
+                                                </a>
+                                                <a class="tj"  href="#">
+                                                    <p>珠海</p>
+                                                </a>  
+                                                <a class="nj"  href="#">
+                                                    <p>福州</p>
+                                                </a>
+                                                <a class="cd"  href="#">
+                                                    <p>西宁</p>
+                                                </a>
+                                                <a class="cq"  href="#">
+                                                    <p>昆明</p>
+                                                </a>
+                                                <a   class="tj"  href="#">
+                                                    <p>澳门</p>
+                                                </a>  
+                                                <a class="nj"  href="#">
+                                                    <p>南宁</p>
+                                                </a>
+                                                <a class="cd"  href="#">
+                                                    <p>长春</p>
+                                                </a>
+                                                <a class="cq"  href="#">
+                                                    <p>哈尔滨</p>
+                                                </a>  
+                                                <a class="tj"  href="#">
+                                                    <p>徐州</p>
+                                                </a>  
+                                                <a class="nj"  href="#">
+                                                    <p>太原</p>
+                                                </a>
+                                                <a class="cd"  href="#">
+                                                    <p>潍坊<p>
+                                                </a>
+                                                
+                                        </div>    
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="iphone">
+                    <ul>
+                        <li>
+                            <div class="cel">
+                                <a class="icon" href="#">
+                                    <p>手机永乐</p>
+                                </a>
+                                <div class="erweima">
+                                    <img src="http://static.228.com.cn/resources/images/f-ermmobile.png">
+                                    <a href="https://www.228.com.cn/zhuanti/app2014ios/" target="blank"  class="ios">
+                                        iOS版点我
+                                    </a>
+                                    <a href="https://www.228.com.cn/zhuanti/app2014/" target="blank" class="Android">
+                                        Android版点我
+                                    </a>
+                                </div>
+                        </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="online">
+                    <a class="service" href="#">
+                        在线客服
+                    </a>
+                </div>
+                <div class="help">
+                    <a class="center" href="#">
+                        在线客服
+                    </a>
+                </div>
+                <button class="wb">
+                    <img class="weibo" src="images/weibo.jpg">
+                    <p>已关注</p>
+                </button>
+            </div>
+    </div>
+
+     <!--section部分———top-->
+     <div id="section-top">
+            <div class="top1">
+                <h1>
+                    <img src="images/pic3.jpg">
+                </h1>
+                <div class="selection">
+                    <p class="china">全国</p>
+                    <button class="cut">切换城市</button>
+                </div>
+                <div class="search">
+                    <form>
+                        <input class="txt" type="text">
+                        <input class="sou" type="button" value="搜索">
+                    </form>
+                    <div class="hot">
+                        <span class="major">热门：</span>
+                        <a class="bolin" href="#">柏林爱乐</a>
+                        <a class="zxy" href="#">张学友</a>
+                        <a class="lyd" href="#">李云迪</a>
+                        <a class="xtx" href="#">谢天笑</a>
+                        <a class="ynw" href="#">杨乃文</a>
+                        <a class="more" href="#">更多</a>
+                    </div>
+                </div>
+    
+            </div>
+     </div>
+    
+    <!--seciton部分————nav部分-->
+    <div id="section-nav">
+        <div class="goods">
+            <a class="all" href="#">
+                全部商品分类
+            </a>
+        </div>   
+        <a class="top-page" href="#">
+            首页
+        </a>
+        <a class="top-sing" href="#">
+            演唱会
+        </a>
+        <a class="top-page" href="#">
+            戏剧
+        </a>
+        <a class="top-dance" href="#">
+            舞蹈古典
+        </a>
+        <a class="top-dance" href="#">
+            戏曲综艺
+        </a>
+        <a class="top-page" href="#">
+            亲子
+        </a>
+        <a class="top-page" href="#">
+            体育
+        </a>
+        <a class="top-page" href="#">
+            电影
+        </a>
+        <a class="top-dance" href="#">
+            故宫订票
+        </a>
+        <a class="top-country" href="#">
+            国家大剧院
+        </a>
+    </div>
+
+    <!--section部分——one部分-->
+    <div id="section-one">
+        <p>
+            <a href="#">永乐票务</a>
+        </p>
+        <i>></i>
+        <p>
+            <a href="#">音乐会</a>
+        </p>
+        <i>></i>
+        <p>
+            <a href="#">成都音乐会</a>
+        </p>
+        <i>></i>
+        <p>
+            <a href="#">流行</a>
+        </p>
+        <i>></i>
+        <p>
+            陈小春「STOP ANGRY」巡回演唱会（成都站）
+        </p>
+    </div>
+
+    <!--section部分————two部分-->
+    <div id="section-two">
+        <div class="title">
+            <h1>陈小春「STOP ANGRY」巡回演唱会（成都站）</h1>
+        </div>
+        <div id="small">
+            <!--给小图片外面贴层膜，防止抖动-->
+            <div id="film"></div>
+              <!--放大镜的框-->
+            <div id="frame"></div>
+            <img src="images/pic107.jpg">
+            <div id="big">
+                <img src="images/pic107.jpg">
+            </div>
+        </div>
+       
+        <div class="left">
+            <p>&nbsp;时&nbsp;&nbsp;&nbsp;间：<i>2018.11.10</i></p>
+            <p>&nbsp;场&nbsp;&nbsp;&nbsp;馆：<i>五粮液成都金融成演艺中心</i></p>
+            <p>&nbsp;支&nbsp;&nbsp;&nbsp;持：<i>返积分 乐通卡 电子钱包 票享无忧退票保险</i></p>
+            <div class="box">
+                <span>【温馨提示】 本演出将于10月16日14点开票，建议您提前注册、登录永乐票务网站或客户端，便于第一时间秒杀成功；为了保证您能够更顺利购票，请下载最新版本的APP(最新版本3.5.5)；</span>
+                <span>【配送提示】抢票前请在“我的永乐-收货地址”中维护好准确的收货地址，以便后期更快收到您的票品；抢票成功后将不支持修改配送方式及收货地址。</span>
+            </div>
+            <div class="free">
+                <p>优惠券</p>
+                <img src="images/pic108.jpg">
+            </div>
+            <span>本场演出实名制限购；每个有效证件限购4张；请您务必填写真实准确的证件信息，否则将影响您正常观演。</span>
+            <div class="date">
+                <p>日期/场次:</p>
+                <a href="#" onclick="return false">
+                    <span>2018-11-10</span>
+                    <i>周六</i>
+                    <b>19:30</b>
+                </a>
+            </div>
+
+            <div class="price">
+                <p>选择价格:</p>
+                <a class="a1" href="#" onclick="return false">
+                        380(看台)
+                </a>
+                <a class="a2" href="#" onclick="return false">
+                        680(看台)
+                </a>
+                <a href="#" onclick="return false">
+                        980(看台)
+                </a>
+                <a href="#" onclick="return false">
+                        1280(看台)
+                </a>
+                <a href="#" onclick="return false">
+                        1280(内场)
+                </a>
+            </div>
+            <div class="notice">
+                <span>此商品为ID限购商品，具体限购政策请见下方商品详情。</span>
+                <span>注：选择已售完票价可进行缺货登记，建议您购买现货商品。</span>
+            </div>
+
+            <a class="shop" href="#" onclick="return false">加入购物车</a>
+        </div>
+    </div>
+
+    <!--热门推荐-->
+    <div id="recommand">
+            <a class="groom" href="#" onclick="return false;">
+                <P>热门推荐</P>
+                <img src="images/pic18.jpg">
+            </a>
+    </div>
+    <div id="carte">
+        <div class="carte1">
+                <h2>近期热门演出推荐</h2>
+                <div class="carte-box">
+                        <p>
+                            <a href="#">小矮人演唱会</a>
+                        </p>
+                        <p>
+                            <a href="#">李宇春演唱会</a>
+                        </p>
+                        <p>
+                            <a href="#">张学友惠州演唱会</a>
+                        </p>
+                        <p>
+                            <a href="#">长沙演唱会</a>
+                        </p>
+                        <p>
+                            <a href="#">杭州演唱会</a>
+                        </p>
+                        <p>
+                            <a href="#">俞灏明演唱会</a>
+                        </p>
+                        <p>
+                            <a href="#">苏打绿演唱会</a>
+                        </p>
+                        <p>
+                            <a href="#">周华健演唱会</a>
+                        </p>
+                        <p>
+                            <a href="#">北京工体演唱会</a>
+                        </p>
+                        <p>
+                            <a href="#">品冠演唱会</a>
+                        </p>
+                        <p>
+                            <a href="#">金泰妍演唱会</a>
+                        </p>
+                        <p>
+                            <a href="#">合肥演唱会</a>
+                        </p>
+                        <p>
+                            <a href="#">林俊杰演唱会上海</a>
+                        </p>
+                        <p>
+                            <a href="#">国际冠军门票</a>
+                        </p>
+                        <p>
+                            <a href="#">京剧演出</a>
+                        </p>
+                </div>
+            
+        </div> 
+    </div>
+
+    <!--footer部分-->
+    <div id="footer-con">
+            <div class="footer-box">
+                <div class="footer-top">
+                    <div class="top1">
+                        <span>新手指南</span>
+                        <a class="o1" href="#">购票流程</a>
+                        <a href="#">发票说明</a>
+                        <a href="#">预定说明</a>
+                        <a href="#">退换及缺货说明</a>
+                        <a href="#">意见与建议</a>
+                    </div>
+                    <div class="top2">
+                        <span>订票方式</span>
+                        <a class="o1" href="#">电话订票</a>
+                        <a href="#">在线订票</a>
+                        <a href="#">上门购票</a>
+                        <a href="#">大客户团购</a>
+                        
+                    </div>
+    
+                    <div class="top3">
+                        <span>支付方式</span>
+                        <a class="o1" href="#">在线支付</a>
+                        <a href="#">银行汇款</a>
+                        <a href="#">货到付款</a>
+                        <a href="#">上门付款</a>
+                        <a href="#">电子钱包</a>
+                        <a href="#">永乐乐通卡</a>
+                    </div>
+                    <div class="top2">
+                        <span>配送说明</span>
+                        <a class="o1" href="#">快递配送</a>
+                        <a href="#">上门自取</a>
+                        <a href="#">电子票</a>
+                        <a href="#">自动取票机</a>
+                    </div>
+                    <div class="top4">
+                        <span>特色服务</span>
+                        <a class="o1" href="#">票享无忧</a>
+                        <a href="#">会员积分</a>
+                        <a href="#">先付先抢</a>
+                        <a href="#">邮件订阅</a>
+                        <a href="#">防伪鉴别</a>
+                    </div>
+                    <dl class="d1">
+                        <dt>
+                            <img src="images/pic19.jpg">
+                        </dt>
+                        <dd>永乐票务官方微信</dd>
+                    </dl>
+                    <dl class="d2">
+                        <dt>
+                            <img src="images/pic20.jpg">
+                        </dt>
+                        <dd>永乐票务手机客服端下载</dd>
+                    </dl>
+                </div>
+                <div class="footer-center">
+                    <ul>
+                        <li class="li1">
+                            <a href="#">关于永乐</a>
+                        </li>
+                        <li class="li2">
+                            <a href="#">永乐大事记</a>
+                        </li>
+                        <li>
+                            <a href="#">品牌识别</a>
+                        </li>
+                        <li>
+                            <a href="#">合作招商</a>
+                        </li>
+                        <li>
+                            <a href="#">服务协议</a>
+                        </li>
+                        <li>
+                            <a href="#">隐私声明</a>
+                        </li>
+                        <li>
+                            <a href="#">招聘信息</a>
+                        </li>
+                        <li>
+                            <a href="#">联系我们</a>
+                        </li>
+    
+                        <li>
+                            <a href="#">友情链接</a>
+                        </li>
+                        <li>
+                            <a href="#">合作伙伴</a>
+                        </li>
+                        <li>
+                            <a href="#">网站地图</a>
+                        </li>
+                        <li>
+                            <a href="#">官方微博</a>
+                        </li>
+                        <li class="li12">
+                            <a href="#">永乐文化集团</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-bottom">
+                    <div class="bottom1">
+                        <p>版权所有  永乐票务  Copyright © 2003-2018 All Rights Reserved  北京春秋永乐文化传播股份有限公司</p>
+                        <p class="p2">中国领先的演出门票预订综合性票务网站,为您提供各类演出门票网上订票服务</p>
+                    </div>
+    
+                    <div class="bottom2">
+                        <p>京ICP证030942号&nbsp;&nbsp;|&nbsp;&nbsp;京公网安备 11010102000758号</p>
+                        <p class="p4">北京12318文化市场举报热线&nbsp;&nbsp;|&nbsp;&nbsp;中国互联网诚信联盟&nbsp;&nbsp;|&nbsp;&nbsp;360绿色网站&nbsp;&nbsp;|&nbsp;&nbsp;
+                            <a href="https://www.228.com.cn/complain.html">工商投诉专栏</a>
+                        </p>
+                    </div>
+                    <div class="bottom3">
+                        <a class="a1" href="#">
+                            <img src="images/pic21.jpg">
+                        </a>
+                        <a href="#">
+                            <img src="images/pic17.jpg">
+                        </a>
+                        <a href="#">
+                            <img src="images/pic21.jpg">
+                        </a>
+                        <a href="#">
+                            <img src="images/pic14.png">
+                        </a>
+                        <a href="#">
+                            <img src="images/pic15.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <!--热门推荐-->
+
+    <script>
+        $("#recommand a").click(function(){
+            $(this).parent().next("#carte").fadeToggle(100)
+        })
+    </script>
+
+    <script>
+        var oSmall=document.getElementById("small");
+        var oSmallImg=oSmall.children[2];
+        var oFrame=document.getElementById("frame");
+        var oBig=document.getElementById("big");
+        var oBigImg=oBig.children[0];
+
+        oSmall.onmouseenter=function(){
+            oFrame.style.display="block";
+            oBig.style.display="block";
+            oSmallImg.style.opacity=0.3;
+        }
+        oSmall.onmouseleave=function(){
+            oBig.style.display="none";
+            oFrame.style.display="none";
+            oSmallImg.style.opacity=1
+        }
+        oSmall.onmousemove=function(event){
+            var e=event || window.event;
+            var offsetX=e.offsetX;
+            var offsetY=e.offsetY;
+
+            var nLeft=offsetX-50;
+            var nTop=offsetY-50;
+
+            //最小值
+            nLeft=nLeft<0? 0:nLeft;
+            nTop=nTop<0? 0:nTop;
+
+            // 最大值
+            var maxLeft=oSmall.offsetWidth-oFrame.offsetWidth;
+            var maxTop=oSmall.offsetHeight-oFrame.offsetHeight;
+
+            nLeft=nLeft>maxLeft? maxLeft:nLeft;
+            nTop=nTop>maxTop? maxTop:nTop;
+            
+            oFrame.style.left=nLeft+"px";
+            oFrame.style.top=nTop+"px";
+
+            // 因为比例是4
+            var propX=oBig.offsetWidth/oFrame.offsetWidth;
+            var propY=oBig.offsetHeight/oFrame.offsetHeight;
+
+            oBigImg.style.left=-nLeft*propX+"px";
+            oBigImg.style.top=-nTop*propY+"px";
+
+            oFrame.style.backgroundPosition=`${-nLeft}px ${-nTop}px`
+        }
+    
+    </script>
+</body>
+</html>
