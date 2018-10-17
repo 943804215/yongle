@@ -640,6 +640,23 @@ body {
 #section-top .top1 .search .hot .more:hover {
   color: #3399cc; }
 
+#section-top .top1 .shop {
+  float: right;
+  background: #cf2626;
+  width: 100px;
+  height: 36px;
+  margin-right: 90px;
+  margin-top: 28px; }
+  #section-top .top1 .shop a {
+    width: 100px;
+    height: 36px;
+    line-height: 36px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    display: block; }
+
 /*section-nav部分*/
 #section-nav {
   width: 100%;
