@@ -2269,7 +2269,7 @@ body {
   height: 276.5px;
   position: fixed;
   right: 10px;
-  bottom: 30px;
+  bottom: 180px;
   z-index: 10000;
   background: #fff; }
 
@@ -2301,7 +2301,12 @@ body {
   background: #a7b1b0;
   display: block;
   margin-left: 5px;
-  margin-top: 3px; }
+  margin-top: 3px; 
+  color:#fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 35px;}
 
 /*footer部分*/
 #footer-con {

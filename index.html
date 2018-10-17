@@ -3420,6 +3420,12 @@
             <li>
                 <a href="#">
                     <p>话剧</p>
+                    <p>舞剧</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <p>音乐</p>
                     <p>舞蹈</p>
                 </a>
             </li>
@@ -3441,13 +3447,14 @@
                     <p>赛事</p>
                 </a>
             </li>
-            <li>
+            <li class="last">
                 <a href="#">
                     <p>在线</p>
                     <p>客服</p>
                 </a>
             </li>
             <a class="return" href="#">
+                ^
             </a>
         </ul>
    </div>
@@ -3941,6 +3948,46 @@
             $("#recommand a").click(function(){
                 $(this).parent().next("#carte").fadeToggle(100)
             })
+    </script>
+
+    <!--楼梯效果-->
+    <script>
+    $(function(){
+	$(window).scroll(function(){ 
+        if($(this).scrollTop() > 850){
+            $("#stair").css({
+                display : "block"
+            })
+        }
+        if($(this).scrollTop() <= 850){
+            $("#stair").css({
+                display : "none"
+            })
+        }
+        
+        
+        
+        var index = Math.floor(($(this).scrollTop()-1500)/450)
+        $($("#stair li")[index]).not(".last").css({
+        	"background" : "#ef3e53"
+        })
+        .siblings("li").css({
+        	"background" : "#fff"
+        })
+        
+        $($("#stair  li")[index]).not(".last").find("p").css({
+        	color : "#fff"
+        })
+		$($("#stair li")[index]).siblings().find("p").css({
+        	color : "#4c4c4c"
+        })
+       
+	})
+
+})
+    
+    
+    
     </script>
 </body>
 </html>
