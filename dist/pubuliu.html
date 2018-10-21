@@ -783,10 +783,11 @@
 
 
 
-        
+        <script src="js/common.js"></script>
         <script src="js/jquery.js"></script>
         <script src="js/nav.js"></script>
-        <script src="js/jquery.cookie.js"></script>
+        <!-- <script src="js/jquery.cookie.js"></script> -->
+     
         <!---瀑布流特效--->
         <script>
             function Pagination(){
@@ -840,10 +841,10 @@
                             <li>
                                 <img src="${list[i].images.small}" alt="">
                                 <p>
-                                    <a href="http://localhost:8888/fangdajing.html#">${list[i].title}</a></p>
+                                    <a href="#">${list[i].title}</a></p>
                                 
                                 <div class="shop">
-                                    <a href="http://localhost:8888/fangdajing.html#" >开始预订</a>
+                                    <a href="#" >开始预订</a>
                                 </div>
                             </li>`
                 }
@@ -883,7 +884,22 @@
             var pagination=new Pagination();
             pagination.init()
         
-        
+            var olist = document.querySelector("#wrap1 ul");
+                console.log(olist)
+            //事件委托：
+            olist.onclick =function(event){
+            var imglist = document.querySelectorAll("#wrap1 img");
+            var imgArr = Array.from(imglist);
+            console.log(imgArr)
+            var e =event || window.event;
+            var target = e.target || e.srcElement;
+            console.log(imgArr.indexOf(target))
+            if(imgArr.indexOf(target)!=-1){
+
+                cookie("id",imgArr.indexOf(target))
+                location.href="http://localhost:8888/fangdajing.html"
+            }
+}
         
         
         </script>
