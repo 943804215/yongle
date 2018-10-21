@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>登录页面</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
     <!--header部分-->
@@ -14,7 +14,7 @@
         <div class="header">
             <h1>
                 <a href="http://localhost:8080/">
-                    <img src="images1/pic2.jpg">
+                    <img src="images/pic2.jpg">
                 </a>
                 
             </h1>
@@ -25,7 +25,7 @@
     <div id="section-con">
         <div class="left">
             <a href="https://www.228.com.cn/zhuanti/cebyl2018/">
-                <img src="images1/pic1.jpg">
+                <img src="images/pic1.jpg">
             </a>
         </div>
         <div class="right" class="clearfix">
@@ -37,32 +37,32 @@
                     </a>
                 </div>
                 <div class="bottom">
-                    <input class="input1" type="text" id="username" placeholder="用户名/邮箱/手机号">
-                    <input class="input2" type="password" id="password" placeholder="请输入密码">
+                    <input class="input1" type="text" id="num" placeholder="用户名/邮箱/手机号">
+                    <input class="input2" type="password" id="pwd" placeholder="请输入密码">
                     <div class="earror">
                         <span></span>
                         <a href="#">忘记密码？</a>
                     </div>
-                    <input class="input3" id="login1" type="button" value="立刻登录">
+                    <input class="input3" type="button" id="login1" value="立刻登录">
                     <div class="choose">
                         <p>合作账号登录</p>
                         <a href="https://graph.qq.com/oauth2.0/show?which=Login&display=pc&response_type=code&redirect_uri=https%3A%2F%2Fwww.228.com.cn%2Funite_qq%2Fback&state=cs2riabd564602dix7c60f15&client_id=100453873">
-                            <img src="images1/pic4.jpg">
+                            <img src="images/pic4.jpg">
                         </a>
                         <a href="https://api.weibo.com/oauth2/authorize?response_type=code&redirect_uri=https%3A%2F%2Fwww.228.com.cn%2Funite_sina%2Fback&state=g2yv83t9h74whk91wgoangji&client_id=1358751088">
-                            <img src="images1/pic8.jpg">
+                            <img src="images/pic8.jpg">
                         </a>
                         <a href="https://auth.alipay.com/login/express.htm?goto=https%3A%2F%2Fmemberexprod.alipay.com%3A443%2Fauthorize%2FuserAuthQuickLoginAction.htm%3Fe_i_i_d%3Dad94d017d3f13e25a6b2aa69129da4c7">
-                            <img src="images1/pic9.jpg">
+                            <img src="images/pic9.jpg">
                         </a>
                         <a href="http://graph.renren.com/oauth/grant?client_id=6409060ba0d44b7490b8dbbb7a4120fb&redirect_uri=https%3A%2F%2Fwww.228.com.cn%2Funite_renren%2Fback&response_type=code&display=page&state=9ejdugea5yyst2bt61le6gap&secure=true&origin=00000">
-                            <img src="images1/pic5.jpg">
+                            <img src="images/pic5.jpg">
                         </a>
                         <a href="https://openapi.baidu.com/oauth/2.0/authorize?response_type=code&redirect_uri=https%3A%2F%2Fwww.228.com.cn%2Funite_baidu%2Fback&state=kx84w2v63umuttl9c385nl21&client_id=rHOGPzEN8DydmgM5axQsPwjK">
-                            <img src="images1/pic6.jpg">
+                            <img src="images/pic6.jpg">
                         </a>
                         <a href="https://open.weixin.qq.com/connect/qrconnect?scope=snsapi_login&response_type=code&redirect_uri=https%3A%2F%2Fwww.228.com.cn%2Fweixin%2Fcallback&state=9zigohidf5uxsfwkmvhyzp1z&appid=wx0a9a5a07cf625e28">
-                            <img src="images1/pic7.jpg">
+                            <img src="images/pic7.jpg">
                         </a>
                     </div>
                 </div>
@@ -109,14 +109,14 @@
                         中国最大的演出门票预订综合性票务网站。为您提供各类演出门票网上订票服务。 
                 </p>
                 <a class="a1" href="#">
-                    <img src="images1/pic10.jpg">
+                    <img src="images/pic10.jpg">
                     <p>网站信用良好</p>
                 </a>
                 <a class="a2" href="#">
                         京ICP证030942号
                 </a>
                 <a class="a3" href="#">
-                    <img src="images1/pic11.jpg">
+                    <img src="images/pic11.jpg">
                     <p>360绿色网站</p>
                 </a>
             </div>
@@ -124,20 +124,23 @@
     </div>
 
 
-    <script src="js/ajax.js"></script> 
+   
+   
+    <script src="jquery.js"></script>
+    <script src="cookie1.js"></script>
+    <script src="ajax.js"></script> 
     <script>
-        var oBtn=document.getElementById("login1");
-        var oUser=document.getElementById("username");
-        var oPwd=document.getElementById("password");
-        oBtn.onclick=function(){
-            url="http://localhost/php-level2/project/epet/denglu-login/php/login.php";
-            ajaxPost(url,`username=${oUser.value}&password=${oPwd.value}`)
-            .then(function(res){
-                console.log(res)
-            })
-          
-        }
-        // window.open("");
+         var brr = getCookie("number");
+        $('#login1').click(function(){
+           
+            for(var i = 0,len = brr.length;i < len;i ++){
+                if($("#num").val() ==brr[i].number){
+                    if($("#pwd").val() == brr[i].pwd){
+                        window.open("http://localhost:8888/index.html")    
+                    }
+                }
+            }
+        })
 
 
     </script>

@@ -18,7 +18,7 @@
             Pagination.prototype.loadJson=function(){
                 return new Promise(function(success,error){
                     var xhr=new XMLHttpRequest();
-                    xhr.open("GET","http://localhost:8888/proxy/api.douban.com/v2/movie/top250");
+                    xhr.open("GET","php/data.json");
                     xhr.send(null);
                     xhr.onload=function(){
                         if(xhr.status==200){

@@ -1,3 +1,4 @@
+
 $("#pwd").blur(function(){
      var pwd = $(this).val();
      var p = /^[A-Za-z0-9]{6,20}$/;
